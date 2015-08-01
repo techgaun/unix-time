@@ -17,5 +17,21 @@ Math.floor(new Date() / 1000)
 [Moment](https://github.com/moment/moment/) is very popular in javascript world for playing with dates in javascript. Below is the momentjs example.
 
 ```javascript
-moment().unix()
+var moment = require('moment');
+var unixtime = moment().unix();
+```
+
+_PHP_
+
+```php
+echo time();
+
+//php5.3 and above
+//OOP style
+$date = new DateTime();
+echo $date->getTimestamp();
+
+//procedural style
+$date = date_create();
+echo date_timestamp_get($date);
 ```
