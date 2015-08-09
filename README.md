@@ -35,3 +35,13 @@ echo $date->getTimestamp();
 $date = date_create();
 echo date_timestamp_get($date);
 ```
+
+_Python_
+
+```python
+from time import time
+print(int(time()))
+
+import datetime
+print(int(datetime.datetime.utcnow().timestamp()))
+```
