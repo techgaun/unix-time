@@ -8,6 +8,20 @@ Unix time (also known as POSIX time or erroneously as Epoch time) is a system fo
 
 #### How to get current unix time
 
+_Java_
+
+```java
+long timestamp = System.currentTimeMillis()/1000;
+System.out.println(timestamp);
+```
+
+Java 8 brings a new API to work with date and times, [Instant](http://docs.oracle.com/javase/8/docs/api/java/time/Instant.html). A good read about why [JSR-310 is not same as joda-time](http://blog.joda.org/2009/11/why-jsr-310-isn-joda-time_4941.html). You can get current unix time on Java 8 by doing something like below:
+
+```java
+long timestamp = Instant.now().getEpochSecond();
+System.out.println(timestamp);
+```
+
 _Javascript_
 
 ```javascript
