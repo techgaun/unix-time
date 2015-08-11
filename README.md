@@ -8,6 +8,34 @@ Unix time (also known as POSIX time or erroneously as Epoch time) is a system fo
 
 #### How to get current unix time
 
+_C_
+
+```c
+#include <stdio.h>
+#include <time.h>
+
+int main(int argc, char **argv) {
+  unsigned int unix_time = (unsigned) time(NULL);
+  fprintf(stdout, "%u\n", unix_time);
+  return 0;
+}
+```
+
+_C++_
+
+```cpp
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+int main(int argc, char **argv) {
+  unsigned int unix_time = (unsigned) time(NULL);
+  cout << unix_time << endl;
+  return 0;
+}
+```
+
 _Java_
 
 ```java
