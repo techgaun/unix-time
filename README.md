@@ -36,6 +36,22 @@ int main(int argc, char **argv) {
 }
 ```
 
+_Elixir_
+
+```elixir
+# first way
+DateTime.utc_now |> DateTime.to_unix
+
+# second way
+System.system_time(:second)
+```
+
+_Erlang_
+
+```erlang
+os:system_time(second).
+```
+
 _Java_
 
 ```java
