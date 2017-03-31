@@ -52,6 +52,13 @@ _Erlang_
 os:system_time(second).
 ```
 
+_Golang_
+
+```go
+now := time.Now()
+unixTs := now.Unix()
+```
+
 _Java_
 
 ```java
