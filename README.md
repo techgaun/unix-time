@@ -8,6 +8,12 @@ Unix time (also known as POSIX time or erroneously as Epoch time) is a system fo
 
 #### How to get current unix time
 
+_UTaaS (Unix Timestamp as a Service) (generic)_
+
+```shell
+curl https://icanhazepoch.com/
+```
+
 _C_
 
 ```c
@@ -109,4 +115,10 @@ print(int(time()))
 
 import datetime
 print(int(datetime.datetime.utcnow().timestamp()))
+```
+
+_Ruby_
+
+```ruby
+Time.now.to_i
 ```
